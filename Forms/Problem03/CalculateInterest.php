@@ -14,10 +14,10 @@ p{
 margin-top: 1%;
 }
 </style>";
-    $amount = $_GET['amount'];
-    $currency = $_GET['currency'];
-    $compound= $_GET['compound']/ 12;
-    $time = $_GET['dropDown'];
+    $amount = htmlentities($_GET['amount']);
+    $currency = htmlentities($_GET['currency']);
+    $compound= htmlentities($_GET['compound']/ 12);
+    $time = htmlentities($_GET['dropDown']);
     $answer = 0;
    for($i =0; $i< intval($time); $i++){
     $amount = $amount + $amount*$compound /100;

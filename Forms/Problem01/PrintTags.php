@@ -1,6 +1,6 @@
 <?php
 require "index.html";
-$data = $_GET['data'];
+$data = htmlentities($_GET['data']);
 $data = split(",", $data);
 echo "<br />";
 if (isset ($_GET['data'])) {
@@ -8,4 +8,5 @@ if (isset ($_GET['data'])) {
         echo "$i: $data[$i] <br />";
     }
 }
+
 ?>

@@ -9,7 +9,6 @@ if($string != strip_tags($string)) {
 echo "<p><strong>Valid HTML TAG!</strong></p>";
     $_SESSION["count"]= $_SESSION["count"]+1;
     echo "<p>"."Score:".$_SESSION["count"]."</p>";
-
     array_push($_SESSION['tags'], $string);
 
 }
