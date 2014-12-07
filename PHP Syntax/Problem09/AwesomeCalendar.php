@@ -1,5 +1,6 @@
 <?php
 require "index.html";
+if (isset($_GET['date'])){
 $year = $_GET['date'];
 
 echo "<style>
@@ -103,5 +104,5 @@ for ($i = 1; $i < 13; $i++) {
     }
     echo "</table>";
 }
-
+}
 ?>

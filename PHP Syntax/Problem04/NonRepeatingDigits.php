@@ -1,5 +1,6 @@
 <?php
 require "index.html";
+if(isset ($_GET["input"])){
 $input = $_GET['input'];
 if($input <= 100){
     echo "No";
@@ -15,4 +16,5 @@ for ($i = 0; $i < count($digitArray); $i++) {
     $result=  $result. implode("", $array) . " ";
 }
 echo $result;
+}
 ?>

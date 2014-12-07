@@ -1,9 +1,10 @@
 <?php
+if(isset ($_GET['name']) && isset($_GET['gsm']) && isset($_GET['age']) && isset ($_GET['address']) ){
 require "index.html";
-    $name = $_GET['name'];
+    $name = htmlentities($_GET['name']);
     $number = $_GET['gsm'];
     $age = $_GET['age'];
-    $address= $_GET['address'];
+    $address= htmlentities(['address']);
     echo "<style>
 table{
 
@@ -32,4 +33,5 @@ margin-top: 2px;
     echo "<tr><td class=row>Age</td><td>$age</td></tr>";
     echo "<tr><td class=row>Address</td><td>$address</td></tr>";
     echo "</table>";
+}
 ?>
