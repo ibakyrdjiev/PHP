@@ -10,7 +10,10 @@ if (isset ($_GET['start'])) {
         if (is_numeric($matches[0][$i])) {
             $lineArr = str_split($matches[0][$i]);
             $line = $matches[0][$i];
-            $result = array_sum($lineArr);
+            $result = 0;
+            for($k=0; $k <count($lineArr);$k++){
+                $result+= $lineArr[$k];
+            }
             echo "<tr><td>$line</td><td>$result</td></tr>";
         } else {
             $line = $matches[0][$i];

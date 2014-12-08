@@ -6,16 +6,18 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<form action="StringModifier.php" method="get" >
+<form action="StringModifier.php" method="get">
     <label for="start">Input String</label>
-    <input type="text" name="start" required="required" id = 'start'/>
-    <input type="radio" name="type" required="required" id="1"/>
+    <input type="text" name="start" required="required" id='start'/>
+    <input type="radio" name="type" required="required" id="1" value="parlindrome"/>
     <label for="1">Check palindrome</label>
-    <input type="radio" name="type" required="required" value="parlindrome" id="2"/>
+    <input type="radio" name="type" required="required" value="reverse" id="5"/>
+    <label for="5">Reverse String</label>
+    <input type="radio" name="type" required="required" value="split" id="2"/>
     <label for="2">Split</label>
-    <input type="radio" name="type" required="required" id="3"/>
+    <input type="radio" name="type" required="required" id="3" value="hash"/>
     <label for="3">Hash String</label>
-    <input type="radio" name="type" required="required" id="4"/>
+    <input type="radio" name="type" required="required" id="4" value="shuffle"/>
     <label for="4">Shuffle String</label>
     <input type="submit" value="Submit"/>
 </form>
