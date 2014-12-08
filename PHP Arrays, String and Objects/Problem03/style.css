@@ -1,0 +1,7 @@
+table, tr, td, th{
+    border: 1px solid black;
+}
+body > form > input[type="submit"]{
+    display: block;
+   // margin-bottom: 20px;
+}
