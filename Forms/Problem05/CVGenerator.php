@@ -22,13 +22,7 @@ if (isset($_GET['firstName'], $_GET['lastName'], $_GET['email'], $_GET['phone'],
     $reading = $_GET['reading']; // array
     $writing = $_GET['writing']; //  $spoken = $_GET['spoken']; //array
     $drive = $_GET['drive'];
-   //test
 
-
-
-
-
-    //
     echo "<style>
 td, th, tr{
 border: 1px solid black;
